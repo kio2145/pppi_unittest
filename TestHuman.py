@@ -1,5 +1,7 @@
 import unittest
 from Human import Human
+import os
+import sys
 import xmlrunner
 
 class TestHuman(unittest.TestCase):
@@ -17,7 +19,10 @@ class TestHuman(unittest.TestCase):
         self.assertEqual(self.human.get_age(),self.test_gat)
 
 if __name__ == '__main__':
-        with open('results.xml', 'wb') as output:
+        script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+        print(script_directory)
+        with open(script_directory+r'\results.xml', 'wb') as output:
             unittest.main(
                 testRunner=xmlrunner.XMLTestRunner(output=output),
                 failfast=False, buffer=False, catchbreak=False)
+       
