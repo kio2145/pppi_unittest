@@ -20,7 +20,7 @@ class TestHuman(unittest.TestCase):
 
 if __name__ == '__main__':
         script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
-        print(script_directory)
+        print(script_directory+r'\results.xml')
         with open(script_directory+r'\results.xml', 'wb') as output:
             unittest.main(
                 testRunner=xmlrunner.XMLTestRunner(output=output),
