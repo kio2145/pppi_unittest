@@ -18,7 +18,7 @@ class TestHuman(unittest.TestCase):
     def test_get_age(self):
         self.assertEqual(self.human.get_age(),self.test_gat)
     def test_get_not_age(self):
-         self.assertEqual(self.human.get_age(),self.test_gat)
+         self.assertEqual(self.human.get_age(),self.test_name)
 
 # if __name__ == '__main__':
 #         script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
