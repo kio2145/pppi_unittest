@@ -2,7 +2,7 @@ import unittest
 from Human import Human
 import os
 import sys
-import xmlrunner
+# import xmlrunner
 
 class TestHuman(unittest.TestCase):
     def setUp(self):
@@ -20,10 +20,10 @@ class TestHuman(unittest.TestCase):
     def test_get_not_age(self):
          self.assertEqual(self.human.get_age(),self.test_surname)
 
-if __name__ == '__main__':
-        script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
-        with open(script_directory+r'\results.xml', 'wb') as output:
-            unittest.main(
-                testRunner=xmlrunner.XMLTestRunner(output=output),
-                failfast=False, buffer=False, catchbreak=False)
+# if __name__ == '__main__':
+#         script_directory = os.path.dirname(os.path.abspath(sys.argv[0]))
+#         with open(script_directory+r'\results.xml', 'wb') as output:
+#             unittest.main(
+#                 testRunner=xmlrunner.XMLTestRunner(output=output),
+#                 failfast=False, buffer=False, catchbreak=False)
        
