@@ -1,1 +1,2 @@
 beautifulsoup4            # Install the latest compatible version
+pytest
